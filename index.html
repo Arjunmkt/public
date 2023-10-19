@@ -24,12 +24,36 @@
         <div class="top-right  d-flex justify-content-between">
 
           <!-- Language Selector -->
-          <select class="form-select btn btn-outline-light form-select-lg mb-3 bg-dark  text-light" aria-label="Default select example">
-            <option selected>English</option>
-            <option value="1">Malayalam</option>
-            <option value="2">Tamil</option>
-            <option value="3">Hindi</option>
-          </select>
+          <div class="dropdown">
+            <button type="button" class="btn dropbtn btn-danger" onclick="myFunction()">Language</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home">English</a>
+              <a href="#about">Malayalam</a>
+              <a href="#contact">Hindi</a>
+            </div>
+          </div>
+          <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
+            
 
           <!-- Sign In button -->
           <div class="sign-in">
