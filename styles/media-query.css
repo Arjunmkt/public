@@ -35,15 +35,18 @@
   }
 
 }
-@media (max-width:500px) {
+@media (min-width:401px) and (max-width:500px) {
   .netflix-logo{
     width: 120px;
-    margin: 0px;
+    margin: 20px 0px 0px 0px;
   }
   .sign-in{
     margin-top: 8px;
-    margin-left: 18px;
+    margin-left: 15px;
     
+  }
+  .buton{
+    margin-top: 8px;
   }
   
 
@@ -58,4 +61,54 @@
   }
   
 }
+@media (max-width:357px) {
+.mail{
+  width: 100%;
 
+}
+}
+
+@media (min-width:300px) and (max-width:400px) {
+.sign-in-btn{
+
+  font-size:11px;
+  padding-inline: 4px;
+  padding-block: 3px;
+}
+.buton{
+  font-size:11px;
+  padding: 2px 2px;
+}
+.netflix-logo{
+  width: 100px;
+  margin: 20px 0px 0px 10px;
+}
+.top-right{
+  margin-right: -10px;
+}
+.dropdown{
+  margin-top: 0px;
+}
+}
+@media (max-width:299px)
+{ 
+  .sign-in-btn{
+
+    font-size:8px;
+    padding-inline: 3px;
+    padding-block: 3px;
+  }
+  .buton{
+    font-size:8px;
+    padding: 3px 3px;
+  }
+
+  .netflix-logo{
+    width: 80px;
+    margin: 20px 0px 0px 10px;
+  }
+
+  .dropdown{
+    margin-top: 0px;
+  }
+}
